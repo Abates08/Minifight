@@ -19,6 +19,9 @@ public class snake {
         while(true){
         for(int i=0; i<framex; i++) {
             for(int j=0; j<framey; j++) {
+                if(i == playerx && j == playery){
+                    frame[i][j] = 1;
+                }
                 System.out.print(frame[i][j] + " ");
             }
             System.out.print("\n");
